@@ -27,7 +27,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## ------------------------------------------ Using NgBootstrap ----------------------------------
+##   ------------------Using Ng-Bootstra ------------------------------------------
 see:
 + [alligator](https://alligator.io/angular/ng-bootstrap/)
 + [codingthesmartway](https://codingthesmartway.com/using-bootstrap-with-angular)
