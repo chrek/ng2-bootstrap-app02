@@ -15,22 +15,22 @@
 <div class="container">
   <p>
     Progress bars:
-    <p><ngb-progressbar showValue="true" type="success" [value]="25"></ngb-progressbar></p>
-    <p><ngb-progressbar showValue="true" type="info" [value]="50"></ngb-progressbar></p>
-    <p><ngb-progressbar showValue="true" type="warning" [value]="75"></ngb-progressbar></p>
-    <p><ngb-progressbar showValue="true" type="danger" [value]="100"></ngb-progressbar></p>
+    <ngb-progressbar showValue="true" type="success" [value]="25"></ngb-progressbar>
+    <ngb-progressbar showValue="true" type="info" [value]="50"></ngb-progressbar>
+    <ngb-progressbar showValue="true" type="warning" [value]="75"></ngb-progressbar>
+    <ngb-progressbar showValue="true" type="danger" [value]="100"></ngb-progressbar>
   </p>
 </div>
 
 <div class="container">
-  <ngb-tabset>
+  <ng-template #popContent>Popover in first tab of <b>{{title}}</b></ng-template>
+  <ngb-tabset>    
     <ngb-tab title="Nitrate-free Bacon">
       <ng-template ngbTabContent>
         <p class="mt-4">Content for first tab.
-          <button type="button" class="btn btn-secondary" placement="bottom" 
-            ngbPopover="Popover in first tab"
-            popoverTitle="Awesome Bacon">
-              Click me
+          <button type="button" class="btn btn-outline-secondary" placement="right" 
+          [ngbPopover]="popContent" popoverTitle="Awesome Bacon">
+              Click me-My popover has markup and bindings
             </button>
           </p>
       </ng-template>
